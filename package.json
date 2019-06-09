@@ -1,0 +1,32 @@
+{
+  "name": "react-prefetcher",
+  "version": "0.1.0",
+  "description": "A react library that can be used to prefetch assets on page render and also on user interactions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manojVivek/react-pefetcher.git"
+  },
+  "keywords": [
+    "prefetch",
+    "performance",
+    "preload",
+    "resource",
+    "hint",
+    "web",
+    "performance",
+    "speed",
+    "link",
+    "cache",
+    "react"
+  ],
+  "author": "Manoj Vivek (https://github.com/manojVivek)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manojVivek/react-pefetcher/issues"
+  },
+  "homepage": "https://github.com/manojVivek/react-pefetcher#readme"
+}
