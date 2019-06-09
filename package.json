@@ -4,7 +4,10 @@
   "description": "A react library that can be used to prefetch assets on page render and also on user interactions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "prebuild": "rm -rf dist/*",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,5 +31,11 @@
   "bugs": {
     "url": "https://github.com/manojVivek/react-pefetcher/issues"
   },
-  "homepage": "https://github.com/manojVivek/react-pefetcher#readme"
+  "homepage": "https://github.com/manojVivek/react-pefetcher#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-react": "^7.0.0"
+  }
 }
