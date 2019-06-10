@@ -1,4 +1,4 @@
-import Prefetcher from "./prefetcher";
+import Prefetcher from './prefetcher';
 
 export default Prefetcher;
 
