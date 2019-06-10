@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manojVivek/react-pefetcher.git"
+    "url": "git+https://github.com/manojVivek/react-prefetcher.git"
   },
   "keywords": [
     "prefetch",
@@ -29,9 +29,9 @@
   "author": "Manoj Vivek (https://github.com/manojVivek)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/manojVivek/react-pefetcher/issues"
+    "url": "https://github.com/manojVivek/react-prefetcher/issues"
   },
-  "homepage": "https://github.com/manojVivek/react-pefetcher#readme",
+  "homepage": "https://github.com/manojVivek/react-prefetcher#readme",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
