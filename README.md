@@ -1,7 +1,4 @@
-# React-Prefetcher
-
-![GitHub](https://img.shields.io/github/license/manojVivek/react-prefetcher.svg)
-![npm](https://img.shields.io/npm/v/react-prefetcher.svg?color=green)
+# React-Prefetcher ![GitHub](https://img.shields.io/github/license/manojVivek/react-prefetcher.svg) ![npm](https://img.shields.io/npm/v/react-prefetcher.svg?color=green)
 
 A react library providing components that help with interaction-based asset pre-fetching.
 
@@ -77,9 +74,9 @@ import Prefetcher from 'react-prefetcher';
 export default () => (
   <Fragement>
     <Prefetcher
-      renderLink="https://example.com/on-render-asset-url"
-      hoverLink="https://example.com/on-hover-asset-url"
-      clickLink="https://example.com/on-click-asset-url"
+      onRenderAssets="https://example.com/on-render-asset-url"
+      onHoverAssets="https://example.com/on-hover-asset-url"
+      onClickAssets="https://example.com/on-click-asset-url"
     >
       <p>
         1. Prefetches https://example.com/on-render-asset-url on render of this `<p />` tag.
