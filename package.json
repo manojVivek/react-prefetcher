@@ -11,6 +11,9 @@
     "prepublish": "npm run build",
     "release": "np"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manojVivek/react-prefetcher.git"
