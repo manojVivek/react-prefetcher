@@ -1,4 +1,4 @@
-# React-Prefetcher ![GitHub](https://img.shields.io/github/license/manojVivek/react-prefetcher.svg) ![npm](https://img.shields.io/npm/v/react-prefetcher.svg?color=green)
+# React-Prefetcher ![GitHub](https://img.shields.io/github/license/manojVivek/react-prefetcher.svg) ![npm](https://img.shields.io/npm/v/react-prefetcher.svg)
 
 A react library providing components that help with interaction-based asset pre-fetching.
 
@@ -65,7 +65,7 @@ export default () => (
 
 ### Prefetcher
 
-Customize prefetching by combining multiple interations.
+Customize prefetching by combining multiple interactions.
 
 ```javascript
 import React, {Fragment} from 'react';
@@ -86,6 +86,38 @@ export default () => (
     </Prefetcher>
   </Fragment>
 );
+```
+
+### Possible values for assets
+
+1. URL
+2. Array of URLs
+3. Object with custom fetcher
+
+#### URL as asset:
+
+```javascript
+<Prefetcher onRenderAssets="https://example.com/on-render-asset-url" />
+```
+
+#### Array of URLs:
+
+```javascript
+<Prefetcher
+  onRenderAssets={[
+    'https://example.com/url',
+    'https://example.com/another-url',
+  ]}
+/>
+```
+
+#### Custom fetcher function:
+
+```javascript
+<Prefetcher onRenderAssets={{
+  href: 'an URL or id to prevent redundant fetch',
+  fetcher: () => {//custom fetcher that gets invoked on render},
+}} />
 ```
 
 ## Contributing
