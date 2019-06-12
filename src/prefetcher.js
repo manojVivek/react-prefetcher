@@ -27,7 +27,7 @@ export default class Prefetcher extends React.Component {
           onMouseEnter={() => this._eventHappened('hover')}
           onClick={() => this._eventHappened('click')}
           className={this.props.className}
-          style={this.props.style}
+          style={{ width: 'max-content', ...this.props.style }}
         >
           {this.props.children}
         </span>
