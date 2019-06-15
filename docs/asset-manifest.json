@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-prefetcher/static/css/main.0f84021f.chunk.css",
-    "main.js": "/react-prefetcher/static/js/main.c19cf8e1.chunk.js",
-    "main.js.map": "/react-prefetcher/static/js/main.c19cf8e1.chunk.js.map",
-    "runtime~main.js": "/react-prefetcher/static/js/runtime~main.d090f32f.js",
-    "runtime~main.js.map": "/react-prefetcher/static/js/runtime~main.d090f32f.js.map",
-    "static/js/2.dcc8df9a.chunk.js": "/react-prefetcher/static/js/2.dcc8df9a.chunk.js",
-    "static/js/2.dcc8df9a.chunk.js.map": "/react-prefetcher/static/js/2.dcc8df9a.chunk.js.map",
-    "index.html": "/react-prefetcher/index.html",
-    "precache-manifest.a9f226597b0d489b6806d532478b83cc.js": "/react-prefetcher/precache-manifest.a9f226597b0d489b6806d532478b83cc.js",
-    "service-worker.js": "/react-prefetcher/service-worker.js",
-    "static/css/main.0f84021f.chunk.css.map": "/react-prefetcher/static/css/main.0f84021f.chunk.css.map"
+    "main.css": "https://manojvivek.github.io/react-prefetcher/static/css/main.0f84021f.chunk.css",
+    "main.js": "https://manojvivek.github.io/react-prefetcher/static/js/main.066f72df.chunk.js",
+    "main.js.map": "https://manojvivek.github.io/react-prefetcher/static/js/main.066f72df.chunk.js.map",
+    "runtime~main.js": "https://manojvivek.github.io/react-prefetcher/static/js/runtime~main.46fcdfae.js",
+    "runtime~main.js.map": "https://manojvivek.github.io/react-prefetcher/static/js/runtime~main.46fcdfae.js.map",
+    "static/js/2.dcc8df9a.chunk.js": "https://manojvivek.github.io/react-prefetcher/static/js/2.dcc8df9a.chunk.js",
+    "static/js/2.dcc8df9a.chunk.js.map": "https://manojvivek.github.io/react-prefetcher/static/js/2.dcc8df9a.chunk.js.map",
+    "index.html": "https://manojvivek.github.io/react-prefetcher/index.html",
+    "precache-manifest.f353fe2dcce57fdbfff016a75e042fe3.js": "https://manojvivek.github.io/react-prefetcher/precache-manifest.f353fe2dcce57fdbfff016a75e042fe3.js",
+    "service-worker.js": "https://manojvivek.github.io/react-prefetcher/service-worker.js",
+    "static/css/main.0f84021f.chunk.css.map": "https://manojvivek.github.io/react-prefetcher/static/css/main.0f84021f.chunk.css.map"
   }
 }

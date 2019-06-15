@@ -16,7 +16,7 @@ importScripts(
 );
 
 importScripts(
-  '/react-prefetcher/precache-manifest.a9f226597b0d489b6806d532478b83cc.js'
+  'https://manojvivek.github.io/react-prefetcher/precache-manifest.f353fe2dcce57fdbfff016a75e042fe3.js'
 );
 
 self.addEventListener('message', event => {
@@ -36,7 +36,9 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute(
-  workbox.precaching.getCacheKeyForURL('/react-prefetcher/index.html'),
+  workbox.precaching.getCacheKeyForURL(
+    'https://manojvivek.github.io/react-prefetcher/index.html'
+  ),
   {
     blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/],
   }
