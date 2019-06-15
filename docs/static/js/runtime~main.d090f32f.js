@@ -1,13 +1,13 @@
 !(function(e) {
   function r(r) {
     for (
-      var n, f, i = r[0], l = r[1], a = r[2], c = 0, s = [];
-      c < i.length;
-      c++
+      var n, f, i = r[0], l = r[1], a = r[2], p = 0, s = [];
+      p < i.length;
+      p++
     )
-      (f = i[c]), o[f] && s.push(o[f][0]), (o[f] = 0);
+      (f = i[p]), o[f] && s.push(o[f][0]), (o[f] = 0);
     for (n in l) Object.prototype.hasOwnProperty.call(l, n) && (e[n] = l[n]);
-    for (p && p(r); s.length; ) s.shift()();
+    for (c && c(r); s.length; ) s.shift()();
     return u.push.apply(u, a || []), t();
   }
   function t() {
@@ -72,12 +72,12 @@
     (f.o = function(e, r) {
       return Object.prototype.hasOwnProperty.call(e, r);
     }),
-    (f.p = '/');
+    (f.p = '/react-prefetcher/');
   var i = (window.webpackJsonp = window.webpackJsonp || []),
     l = i.push.bind(i);
   (i.push = r), (i = i.slice());
   for (var a = 0; a < i.length; a++) r(i[a]);
-  var p = l;
+  var c = l;
   t();
 })([]);
-//# sourceMappingURL=runtime~main.a8a9905a.js.map
+//# sourceMappingURL=runtime~main.d090f32f.js.map
