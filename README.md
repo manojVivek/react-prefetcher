@@ -114,10 +114,14 @@ export default () => (
 #### Custom fetcher function:
 
 ```javascript
-<Prefetcher onRenderAssets={{
-  href: 'an URL or id to prevent redundant fetch',
-  fetcher: () => {//custom fetcher that gets invoked on render},
-}} />
+<Prefetcher
+  onRenderAssets={{
+    href: 'an URL or id to prevent redundant fetch',
+    fetcher: () => {
+      /*custom fetcher that gets invoked on render*/
+    },
+  }}
+/>
 ```
 
 ## Contributing
