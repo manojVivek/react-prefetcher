@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class NetworkReqestLister extends React.Component {
+export default class NetworkInspector extends React.Component {
   constructor(props) {
     super(props);
     this.state = { requests: [] };
@@ -36,7 +36,10 @@ export default class NetworkReqestLister extends React.Component {
             <tr>
               <td>{Math.round(request.startTime)}</td>
               <td>{request.name}</td>
-              <td>{Math.round(request.duration)}</td>
+              <td>
+                {Math.round(request.duration)}
+                {request.duration < 10 && '(from cache)'}
+              </td>
             </tr>
           ))}
         </table>
