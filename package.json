@@ -4,7 +4,8 @@
   "description": "A react library providing components that help with interaction-based asset pre-fetching.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "nyc mocha --require @babel/register --require jsdom-global/register",
+    "test-dev": "mocha --require @babel/register --require @babel/polyfill --require jsdom-global/register --watch",
     "build": "babel src --out-dir dist",
     "dev": "babel src --out-dir dist --watch",
     "prebuild": "rm -rf dist/*",
@@ -41,15 +42,29 @@
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "chai-spies": "^1.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "husky": "^2.4.0",
+    "jsdom": "15.1.1",
+    "jsdom-global": "3.0.2",
+    "mocha": "^6.1.4",
     "np": "^5.0.3",
+    "nyc": "^14.1.1",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.0",
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "husky": {
     "hooks": {
