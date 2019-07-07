@@ -13,24 +13,36 @@ export default class Prefetcher extends React.Component {
 
   _delay = this.props.delayMs || 500;
 
+  timeoutHandles = [];
+
   _eventHappened = event =>
-    setTimeout(() => this.setState({ [event + 'ed']: true }), this._delay);
+    timeoutHandles.push(
+      setTimeout(() => this.setState({ [event + 'ed']: true }), this._delay)
+    );
 
   componentDidMount() {
     this._eventHappened('render');
   }
 
+  componentWillUnmount() {
+    for (const handle of timeoutHandles) {
+      clearTimeout(handle);
+    }
+  }
+
   render() {
     return (
       <Fragment>
-        <span
-          onMouseEnter={() => this._eventHappened('hover')}
-          onClick={() => this._eventHappened('click')}
-          className={this.props.className}
-          style={{ width: 'max-content', ...this.props.style }}
-        >
-          {this.props.children}
-        </span>
+        {this.props.children && (
+          <span
+            onMouseEnter={() => this._eventHappened('hover')}
+            onClick={() => this._eventHappened('click')}
+            className={this.props.className}
+            style={{ width: 'max-content', ...this.props.style }}
+          >
+            {this.props.children}
+          </span>
+        )}
         {this.state.rendered && this._prefetchAssets(this.props.onRenderAssets)}
         {this.state.hovered && this._prefetchAssets(this.props.onHoverAssets)}
         {this.state.clicked && this._prefetchAssets(this.props.onClickAssets)}
@@ -63,7 +75,6 @@ export default class Prefetcher extends React.Component {
         rel="prefetch"
         href={href}
         onLoad={() => (loadedUrls[href] = true)}
-        as="image"
       />
     );
   };
