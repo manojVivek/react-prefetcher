@@ -16,7 +16,7 @@ export default class Prefetcher extends React.Component {
   timeoutHandles = [];
 
   _eventHappened = event =>
-    timeoutHandles.push(
+    this.timeoutHandles.push(
       setTimeout(() => this.setState({ [event + 'ed']: true }), this._delay)
     );
 
@@ -25,7 +25,7 @@ export default class Prefetcher extends React.Component {
   }
 
   componentWillUnmount() {
-    for (const handle of timeoutHandles) {
+    for (const handle of this.timeoutHandles) {
       clearTimeout(handle);
     }
   }
