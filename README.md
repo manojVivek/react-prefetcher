@@ -25,7 +25,7 @@ import React, {Fragment} from 'react';
 import {OnRenderPrefetcher} from 'react-prefetcher';
 
 export default () => (
-  <Fragement>
+  <Fragment>
     <OnRenderPrefetcher link="https://example.com/some-asset-url">
       <p>Asset prefetching happens when this `<p />` tag is rendered</p>
     </OnRenderPrefetcher>
@@ -40,7 +40,7 @@ import React, {Fragment} from 'react';
 import {OnHoverPrefetcher} from 'react-prefetcher';
 
 export default () => (
-  <Fragement>
+  <Fragment>
     <OnHoverPrefetcher link="https://example.com/some-asset-url">
       <p>Asset prefetching happens when the user hovers this `<p />` tag </p>
     </OnHoverPrefetcher>
@@ -55,7 +55,7 @@ import React, {Fragment} from 'react';
 import {OnClickPrefetcher} from 'react-prefetcher';
 
 export default () => (
-  <Fragement>
+  <Fragment>
     <OnClickPrefetcher link="https://example.com/some-asset-url">
       <p>Asset prefetching happens when the user clicks this `<p />` tag </p>
     </OnClickPrefetcher>
@@ -72,7 +72,7 @@ import React, {Fragment} from 'react';
 import Prefetcher from 'react-prefetcher';
 
 export default () => (
-  <Fragement>
+  <Fragment>
     <Prefetcher
       onRenderAssets="https://example.com/on-render-asset-url"
       onHoverAssets="https://example.com/on-hover-asset-url"
