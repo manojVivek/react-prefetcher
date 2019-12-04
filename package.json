@@ -1,8 +1,8 @@
 {
   "name": "react-prefetcher",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A react library providing components that help with interaction-based asset pre-fetching.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "nyc mocha --require @babel/register --require jsdom-global/register",
     "test-dev": "mocha --require @babel/register --require @babel/polyfill --require jsdom-global/register --watch",
